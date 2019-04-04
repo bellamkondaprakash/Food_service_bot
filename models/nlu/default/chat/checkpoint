@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/prakash/food-ordering-chatbot/./models/nlu/default/chat/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/home/prakash/food-ordering-chatbot/./models/nlu/default/chat/intent_classifier_tensorflow_embedding.ckpt"
