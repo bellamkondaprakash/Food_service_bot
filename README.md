@@ -1,6 +1,6 @@
-# food-ordering-chatbot
+# food-Serving-chatbot
 
-Food Ordering Chatbot using RASA.
+Food Serving Swifter Chatbot using RASA.
 
 ## Steps:
 
