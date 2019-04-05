@@ -5,28 +5,27 @@
         "cuisine"
       ]
     },
-    "utter_greetings.bye": {
+    "utter_item.not_available": {
       "slots": []
     },
-    "utter_order.confirm": {
+    "utter_greetings.bye": {
       "slots": []
     },
     "utter_ask.cuisine": {
       "slots": []
     },
-    "utter_item.not_available": {
+    "utter_order.placed": {
       "slots": []
     },
-    "utter_order.placed": {
+    "utter_order.confirm": {
       "slots": []
     }
   },
-  "rasa_core": "0.12.2",
   "python": "3.6.4",
   "max_histories": [
     5,
     null,
-    5
+    10
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
@@ -34,5 +33,8 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy"
   ],
-  "trained_at": "20190116-194526"
+  "trained_at": "20190405-122701",
+  "rasa_core": "0.13.7",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.3"
 }

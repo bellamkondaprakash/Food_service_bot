@@ -27,7 +27,7 @@ agent = Agent.load('models/dialogue', interpreter=model_directory)
 
 print("Your bot is ready to talk! Type your messages here or send 'stop'")
 print("\n\n")
-print("Bot: ","Yo!!! Hey there....")
+print("Jarvish: ","Yo!!! Hey there....")
 while True:
 
     a = input("User: ")
@@ -35,4 +35,4 @@ while True:
         break
     responses = agent.handle_message(a)
     for response in responses:
-        print("BOT: ",response["text"])
+        print("Jarvish: ",response["text"])

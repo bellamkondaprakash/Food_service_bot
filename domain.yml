@@ -1,35 +1,33 @@
 %YAML 1.1
 ---
 actions:
-- utter_item.not_available
-- utter_default
-- utter_order.confirm
-- utter_agent.welcome
-- utter_greetings.hello
-- order.summary
 - utter_select.item
-- order.add_item
 - utter_order.placed
 - order.process
-- utter_ask.cuisine
+- order.add_item
+- utter_order.confirm
 - utter_display.menu
-- utter_order.cancel
-- action_default_fallback
 - order.remove_item
-- utter_greetings.bye
-- utter_order.anything_else
+- utter_greetings.hello
 - utter_item.quantity.how_many
-config:
-  store_entities_as_slots: true
+- utter_order.anything_else
+- utter_agent.welcome
+- utter_greetings.bye
+- order.summary
+- action_default_fallback
+- utter_item.not_available
+- utter_ask.cuisine
+- utter_order.cancel
+- utter_default
 entities:
+- cuisine
+- food
+- number
 - item
 - order-number
-- number
-- food
-- cuisine
 - quant
-forms: []
 intents:
+- i need a north indian food
 - cuisine.type
 - confirm.deny
 - greetings.hello
@@ -40,23 +38,18 @@ intents:
 - item.order
 slots:
   available:
-    auto_fill: true
-    type: rasa_core.slots.CategoricalSlot
+    type: categorical
     values:
     - available
     - not_available
   cuisine:
-    auto_fill: true
-    type: rasa_core.slots.TextSlot
+    type: text
   item:
-    auto_fill: true
-    type: rasa_core.slots.TextSlot
+    type: text
   number:
-    auto_fill: true
-    type: rasa_core.slots.TextSlot
+    type: text
   order_number:
-    auto_fill: true
-    type: rasa_core.slots.UnfeaturizedSlot
+    type: unfeaturized
 templates:
   utter_agent.welcome:
   - text: Hi!!! I am Bru, your food ordering assistant.

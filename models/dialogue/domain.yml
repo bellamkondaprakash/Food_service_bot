@@ -1,35 +1,37 @@
 %YAML 1.1
 ---
 actions:
-- utter_greetings.hello
-- order.remove_item
-- utter_display.menu
-- utter_agent.welcome
-- action_default_fallback
 - utter_item.not_available
-- utter_greetings.bye
-- utter_order.placed
-- utter_order.confirm
-- utter_ask.cuisine
-- order.process
-- order.add_item
-- order.summary
-- utter_order.cancel
-- utter_order.anything_else
-- utter_select.item
-- utter_item.quantity.how_many
 - utter_default
+- utter_order.confirm
+- utter_agent.welcome
+- utter_greetings.hello
+- order.summary
+- utter_select.item
+- order.add_item
+- utter_order.placed
+- order.process
+- utter_ask.cuisine
+- utter_display.menu
+- utter_order.cancel
+- action_default_fallback
+- order.remove_item
+- utter_greetings.bye
+- utter_order.anything_else
+- utter_item.quantity.how_many
 config:
   store_entities_as_slots: true
 entities:
+- item
+- order-number
+- number
+- food
 - cuisine
 - quant
-- food
-- item
-- number
-- order-number
 forms: []
 intents:
+- cuisine.type:
+    use_entities: true
 - confirm.deny:
     use_entities: true
 - greetings.hello:
@@ -41,8 +43,6 @@ intents:
 - selected.item:
     use_entities: true
 - item.quantity:
-    use_entities: true
-- cuisine.type:
     use_entities: true
 - item.order:
     use_entities: true
