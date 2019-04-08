@@ -4,3 +4,11 @@ Rasa process starting
 Rasa process starting
 Rasa process starting
 Rasa process starting
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Rasa process starting
+Restoring parameters from models/nlu/default/chat/intent_classifier_tensorflow_embedding.ckpt
+Rasa Core server is up and running on http://localhost:5005
+Encountered an exception while running action 'action_default_fallback'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
