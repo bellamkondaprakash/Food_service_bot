@@ -1,7 +1,7 @@
 # food-Serving-chatbot
 
 Food Serving Swifter Chatbot using RASA.
-![Food will served within next moment](/home/prakashbs/Pictures/screenshot.png)
+![Food will served within next moment](https://github.com/bellamkondaprakash/Food_service_bot/blob/devel/fresh_con.png)
 ## Steps:
 
 Clone the repo.
